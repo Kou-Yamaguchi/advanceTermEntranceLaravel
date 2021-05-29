@@ -30,7 +30,7 @@ class TodoController extends Controller
     public function store(Request $request)
     {
         $item = new Todo;
-        $item->name_id = $request->name_id;
+        // $item->name_id = $request->name_id;
         $item->name = $request->name;
         $item->save();
         return response()->json([
